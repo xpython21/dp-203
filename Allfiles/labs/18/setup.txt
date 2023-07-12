@@ -41,7 +41,7 @@ async function main() {
         Quantity: q,
         StoreID: storeID,
         EmployeeName: employeeName,
-        State: state
+        USState: state
       }
     });
 
@@ -57,7 +57,7 @@ async function main() {
         storeID +
         ", EmployeeName:" +
         employeeName +
-        ", State:" +
+        ", USState:" +
         state +
         "}"
     );
