@@ -4,7 +4,7 @@ CREATE TABLE dbo.FactOrder
     ProductID int,
     Quantity int,
     StoreID int,
-    EmployeeName string,
-    USState string
+    EmployeeName varchar(200),
+    USState varchar(100)
 )
 GO
