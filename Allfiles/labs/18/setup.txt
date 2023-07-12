@@ -24,13 +24,15 @@ async function main() {
 
   const states = ["Maine", "New York", "Utah", "Nebraska", "Texas"];
 
+  const storeIDs = [12, 15, 22, 32, 9, 5];
+
   var i;
 
   for (i = 0; i < 100; i++) {
     // Generate a random order
     var p = Math.floor(Math.random() * 10) + 1;
     var q = Math.floor(Math.random() * 3) + 1;
-    var storeID = Math.floor(Math.random() * 1000) + 1;
+    var storeID = storeIDs[Math.floor(Math.random() * storeIDs.length)];
     var employeeName = generateEmployeeName();
     var state = states[Math.floor(Math.random() * states.length)];
 
