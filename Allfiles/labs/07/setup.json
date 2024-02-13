@@ -229,5 +229,4 @@
       "value":"[reference(resourceId('Microsoft.Synapse/workspaces', parameters('workspaceName'))).workspaceUID]"
       }
     }
-  }
-  
+  }  
