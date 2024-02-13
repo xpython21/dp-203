@@ -85,7 +85,7 @@ $resourceGroupName = "1-530413a9-playground-sandbox"
 Write-Host "Finding an available region. This may take several minutes...";
 $delay = 0, 30, 60, 90, 120 | Get-Random
 Start-Sleep -Seconds $delay # random delay to stagger requests from multi-student classes
-$preferred_list = "centralus","southcentralus","eastus2","northeurope","westus","westus2"
+$preferred_list = "eastus","eastus2","eastus"
 $locations = Get-AzLocation | Where-Object {
     $_.Providers -contains "Microsoft.Synapse" -and
     $_.Providers -contains "Microsoft.Sql" -and
